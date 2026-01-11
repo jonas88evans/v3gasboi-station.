@@ -3,9 +3,8 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "V3gasboi.online is FRESH and LIVE!"}
+    return {"message": "V3gasboi Station is LIVE"}
 
 @app.on_event("shutdown")
-async def shutdown_db_client():
-    # This 'pass' fixes the NameError you had earlier!
-    pass 
+async def shutdown():
+    pass
